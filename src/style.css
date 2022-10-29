@@ -1,0 +1,20 @@
+/*
+Police de tout le site : Inter
+
+Couleurs :
+F9CD8F Background color général
+343434 Couleur du texte dans les paragraphes
+FFFFFF Couleur des titres sur fond sombre
+D9D9D9 Couleur de la petite barre en dessous du titre dans votre partie
+656565 Couleur du texte source, en italique
+*/
+
+ul{
+    display: inline;
+
+}
+li{
+    text-align: center;
+    list-style: none;
+    font-size: 28px;
+}
