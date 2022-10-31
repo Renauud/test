@@ -18,6 +18,7 @@ D9D9D9 Couleur de la petite barre en dessous du titre dans votre partie
     text-decoration: none;
     box-sizing: border-box;
 }
+
 @font-face{
     font-family: "Inter";
     src: url(../public/font/Inter/Inter-VariableFont_slnt\,wght.ttf);
@@ -47,6 +48,7 @@ body{
     justify-content: space-evenly;
     width: 1454px;
     margin: 0 auto;
+    height: 11vh;
 }
 .div-header-accueil{
     display: flex;
@@ -58,8 +60,9 @@ body{
     text-transform: uppercase;
     color: var(--color-title);
     font-weight: bold;
-    padding: 3.7vh 0vw;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .header-list li::after{
@@ -84,9 +87,55 @@ body{
     width: 170px;
     border: white 3px solid;
     position: absolute;
-    /* left: 50vw; */
     margin: 0 50%;
     top: 1.85vh;
     transform: translate(-50%, 0%);
     box-shadow: 5px 5px 8px rgba(0,0, 0, 0.3);
+}
+
+.content-accueil{
+    display: flex;
+    background-color: white;
+    height: 78vh;
+}
+
+.content-left, .content-right{
+    width: 50%;
+    display: flex;
+}
+
+.content-left{
+    flex-direction: column;
+    align-items: center;
+    padding: 0 45px;
+    height: 100%;
+    justify-content: center;
+}
+
+
+
+.content-left h1{
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+.content-left h2{
+    font-size: 40px;
+    padding-bottom: 5vh;
+    font-weight: 500;
+}
+
+.content-left hr{
+    width: 100px;
+    height: 8px;
+    background-color: var(--color-bg);
+    border-radius: 90px;
+    margin-bottom: 7vh ;
+}
+
+.content-left p {
+    font-size: 35px;
+    text-align: center;
+    color:var(--color-text);
 }
