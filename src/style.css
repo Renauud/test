@@ -26,6 +26,7 @@ D9D9D9 Couleur de la petite barre en dessous du titre dans votre partie
 
 :root{
     --color-bg: #F9CD8F;
+    --color-bg-alt: #474755;
     --color-title: #FFFFFF;
     --color-hl: #D9D9D9;
     --color-text: #343434;
@@ -38,7 +39,7 @@ body{
 }
 
 .container{
-    width:1600px;
+    width:83vw;
     margin:0 auto;
 }
 
@@ -50,7 +51,7 @@ body{
     margin: 0 auto;
     height: 11vh;
 }
-.div-header-accueil{
+.div-header{
     display: flex;
 }
 
@@ -81,8 +82,7 @@ body{
     width: 40%;
 }
 
-
-.logo-accueil{
+.logo{
     border-radius: 100%;
     width: 170px;
     border: white 3px solid;
@@ -91,6 +91,11 @@ body{
     top: 1.85vh;
     transform: translate(-50%, 0%);
     box-shadow: 5px 5px 8px rgba(0,0, 0, 0.3);
+}
+
+.logo-technologie{
+    margin: 0;
+    margin-left:8.5vw;
 }
 
 .content-accueil{
@@ -104,6 +109,8 @@ body{
     display: flex;
 }
 
+
+
 .content-left{
     flex-direction: column;
     align-items: center;
@@ -112,12 +119,23 @@ body{
     justify-content: center;
 }
 
-
+.content-left-partie{
+    width: 45%;
+    background-color:var(--color-bg-alt);
+    color: white;
+}
 
 .content-left h1{
     font-size: 60px;
     text-align: center;
     padding-bottom: 5vh;
+}
+
+.content-left-partie h1{
+    text-align: left;
+    line-height: 1.4;
+    letter-spacing: 2.4px;
+    padding-bottom: 1vh;
 }
 
 .content-left h2{
@@ -131,11 +149,103 @@ body{
     height: 8px;
     background-color: var(--color-bg);
     border-radius: 90px;
-    margin-bottom: 7vh ;
+    margin-bottom: 7vh;
+}
+
+.content-left-partie-top{
+    margin-bottom: 3vh;
+}
+
+.content-left .hr-partie{
+    width: 70px;
+    height: 3px;
+    background-color: var(--color-hl);
+}
+
+.content-left-partie img{
+    height: 300px;
+    transform: rotate(3deg);
+    margin-bottom: 3vh;
 }
 
 .content-left p {
     font-size: 35px;
     text-align: center;
     color:var(--color-text);
+}
+
+.content-right{
+    justify-content: center;
+}
+
+.content-right-partie{
+    width: 55%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.descriptif{
+    font-size: 33px;
+    color: var(--color-text);
+    line-height: 1.3;
+    overflow: auto;
+    /* scrollbar-color: #A7A3A3; */
+}
+
+.descriptif::-webkit-scrollbar{
+    background-color: rgba(255, 255, 255,0);
+    width: 16px;
+}
+
+.descriptif::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: #A7A3A3;
+    background-clip: content-box;
+    border: 4px solid transparent;
+  }
+
+.descriptif p{
+    padding: 30px;
+}
+
+.source{
+    display: flex;
+    justify-content: end;
+    font-style: italic;
+    font-size: 25px;
+    color: var(--color-source);
+    box-shadow: 0px -3px 4px rgba(0,0, 0, 0.1);
+}
+
+.source p{
+    padding: 10px 25px;
+}
+
+.content-right img{
+    width: 660px;
+    object-fit: contain;
+}
+
+.div-footer-accueil{
+    width:100%;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-footer-accueil p{
+    font-size: 28px;
+    color: var(--color-text);
+}
+
+.div-footer-accueil i{
+    font-size: 60px;
+}
+
+.div-footer-accueil .fa-facebook{
+    color: #465993;
+}
+
+.div-footer-accueil > *{
+    padding:0 10px;
 }
