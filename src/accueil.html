@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" media="screen and (min-width:721px)" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>90's Discoveries</title>
@@ -13,47 +13,57 @@
     <!-- <img src="" alt=""> -->
     <img class="logo" src="../public/images/logo.webp" alt="logo">
 
-<header class="container">
+<header class="container desktop">
 
     <div class="div-header">
         <ul class="header-list">
-            <li>Technologie</li>
-            <li>Actualité</li>
+            <li><a href="./technologie.html">Technologie</a></li> <!--La couleur a changé--> 
+            <li><a href="">Actualité</a></li>
         </ul>
         
         <ul class="header-list">
-            <li>Musique</li>
-            <li>Éducation</li>
+            <li><a href="">Musique</a></li>
+            <li><a href="">Éducation</a></li>
         </ul>
     </div> 
 
-
 </header>
 
-<div class="container content-accueil">
-    <div class="content-left">
-        <h1>LES MOMENTS FORTS DES ANNÉES 1990</h1>
+<header class="container mobile fixed">
 
-        <h2>Bienvenue sur 90's Discoveries !</h2>
-
-        <hr>
-
-        <p>Ici, vous allez apprendre quelques faits notables qui sont arrivés
-        durant les années 1990 en un temps record !
-        Les sujets couverts seront les suivants :
-        la technologie, l'actualité, la musique et l'éducation.
-        </p>
+    <div class="header-mobile">
+            
+        <i class="fa-solid fa-bars"></i>
+        <h1>90's Discoveries</h1>
+        <div></div>
 
     </div>
-    <div class="content-right">        
-        <!-- <img class="okcomputer" src="../public/images/radiohead-ok-computer-Cover-Art.webp" alt="">-->
-        <img class="mosaic" src="../public/images/mosaic.jpg" alt=""> 
+</header>
+
+<div class="container content">
+    <div class="content-left content-top-accueil-mobile">
+        <div>
+            <h1>VUE EN DÉTAIL<br>LES ANNÉES 1990</h1>
+            <hr>
+            <p class="lh">Ici, vous allez apprendre quelque faits notables qui sont arrivés durant les 
+            années 1990 en un temps record !
+            Les sujets couverts seront les suivants :
+            la technologie, l’actualité, la musique, et l’éducation.</p>
+        </div>
+
+
+        <img class="images_accueil_mobile mobile" src="../public/images/images_accueil_mobile.png" alt="">
+ </div>
+    <div class="content content-right"> 
+
+        <img class="desktop" src="../public/images/images_accueil.png" alt="">
+
     </div>
 </div>
 
 
 
-<footer class="container">
+<footer class="container desktop">
     <div class="div-footer-accueil">
         <p>Suivez-nous</p>
         <i class="fa-brands fa-facebook"></i>
