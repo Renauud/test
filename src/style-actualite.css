@@ -32,6 +32,14 @@ D9D9D9 Couleur de la petite barre en dessous du titre dans votre partie
     --color-source: #656565;
 }
 
+.mobile{
+    display: none;
+}
+
+.desktop{
+    display: block;
+}
+
 body{
     background-color: var(--color-bg);
     font-family: "Inter";
@@ -83,16 +91,17 @@ body{
 
 .logo-actualite {
     border-radius: 100%;
-    width: 170px;
+    width: 9vw; 
     position: absolute;
-    top: 3vh;
+    top: 1.85vh;
     transform: translate(-50%, 0%);
     margin: 0;
     margin-left:8.5vw;
+    border: white 3px solid;
+    box-shadow: 5px 5px 8px rgba(0,0, 0, 0.3);
 }
 
-
-.content-accueil{
+.content{
     display: flex;
     background-color: white;
     height: 78vh;
@@ -207,6 +216,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .div-footer-actualite p{
     font-size: 28px;
     color: var(--color-text);
@@ -216,10 +226,125 @@ body{
     font-size: 60px;
 }
 
-.div-footer-actulite .fa-facebook{
+.div-footer-actualite .fa-facebook{
     color: #465993;
 }
 
 .div-footer-actualite > *{
     padding:0 10px;
+}
+
+@media screen and (max-width:900px){
+    
+    .mobile{
+        display: block;
+    }
+    
+    .desktop{
+        display: none;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    body{
+        background-color: white;
+    }
+
+    .content{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .fixed{
+        background-color: var(--color-bg);
+        position: sticky;
+        z-index: 1;
+        top:0
+    }
+
+    .header-mobile{
+        display: flex;        
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-mobile h1{
+        font-size: 50px;
+        color: var(--color-title);
+        margin: 7px 0;
+    }
+
+    .header-mobile i{
+        font-size: 60px;
+        margin-left: 10px;
+        color: var(--color-bg-alt);
+    }
+
+    .logo-actualite{
+        margin: 0; 
+        top: 0;
+        right: 0;
+        transform:inherit;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .content-top-mobile{
+        background-color: var(--color-bg-alt);
+        align-items: center;
+        height: 420px;
+    }
+
+    .content-top-accueil-mobile{
+        flex-direction: column-reverse;
+    }
+
+    .content-top-accueil-mobile img{
+        height: 420px;
+    }
+
+    .content-left, .content-right{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+    }
+
+    .images_accueil_mobile{
+        width: 100%;
+    }
+
+    .content-left img{
+        margin: 0;
+        margin-bottom: 3vh;
+    }
+
+    .content-bottom-mobile h1{
+        text-align: center;
+        font-size: 60px;
+        margin: 3vh 0;
+    }
+
+    .content-bottom-mobile hr{
+        background-color: var(--color-bg);
+        width: 60px;
+        height: 13px;
+        border-radius:90px;
+        margin: 0px auto;
+    }
+
+    .content-bottom-mobile h2{
+        text-align: center;
+        font-size: 45px;
+        margin: 2vh 0;
+    }
+
+    .content-bottom-mobile .descriptif{
+        text-align: justify;
+    }
+
+    /* img alt à remplir */
 }

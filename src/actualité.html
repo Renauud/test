@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" media="screen and (min-width:721px)" href="style-actualite.css" />
+    <link rel="stylesheet" href="style-actualite.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>90's Discoveries</title>
@@ -13,7 +13,7 @@
     <!-- <img src="" alt=""> -->
     <img class="logo-actualite" src="../public/images/logo.webp" alt=" ">
 
-<header class="container">
+<header class="container desktop">
 
     <div class="div-header">
         <ul class="header-list">
@@ -24,12 +24,22 @@
         </ul>
     </div> 
 
-
 </header>
 
-<div class="container content-accueil">
-    <div class="content-left content-left-partie">
-        <div class="content-left-partie-top">
+<header class="container mobile fixed">
+
+    <div class="header-mobile">
+            
+        <i class="fa-solid fa-bars"></i>
+        <h1>90's Discoveries</h1>
+        <div></div>
+
+    </div>
+</header>
+
+<div class="container content">
+    <div class="content-left content-left-partie content-top-mobile">
+        <div class="content-left-partie-top desktop">
             <h1>LA LIBÉRATION DE<br>NELSON MANDELA</h1>
 
             <hr class="hr-partie">
@@ -37,7 +47,7 @@
 
     <img src="../public/images/mandela.png" alt="">
     </div>
-    <div class="content-right content-right-partie">  
+    <div class="content-right content-right-partie content-bottom-mobile">  
 
         <div class="descriptif">
             <p> Militant de la lutte contre l'apartheid en Afrique du Sud, Nelson Mandela est emprisonné à vie au début des années 1960 pour sabotage et conspiration afin de renverser le gouvernement. 
@@ -53,9 +63,8 @@
     </div>
 </div>
 
-
-<!-- 
-<footer class="container">
+ 
+<footer class="container desktop">
     <div class="div-footer-actualite">
         <p>Suivez-nous</p>
         <i class="fa-brands fa-facebook"></i>
