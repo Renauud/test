@@ -87,16 +87,14 @@ body{
     width: 40%;
 }
 
-.logo-actualite {
-    z-index: 1;
+.logo{
     border-radius: 100%;
-    width: 9vw; 
-    position: absolute;
-    top: 1.85vh;
-    transform: translate(-50%, 0%);
-    margin: 0;
-    margin-left:8.5vw;
+    width: 8.5vw; /* <-- était 170px */
     border: white 3px solid;
+    position: absolute;
+    margin: 0 50%;
+    top: 2.5vh;
+    transform: translate(-50%, 0%);
     box-shadow: 5px 5px 8px rgba(0,0, 0, 0.3);
 }
 
@@ -125,8 +123,13 @@ body{
     color: white;
 }
 
+.content-left-partie-top{
+    width: 100%;
+}
+
 .content-left h1{
     font-size: 3.2vw;
+    width: 100%;
     text-align: center;
     padding-bottom: 5vh;
 }
@@ -158,9 +161,24 @@ body{
     margin-left: 0vw;
 }
 
-.content-left-partie img{
-    height: 13vw;
+.content-left-partie .img-sujet{
     margin-bottom: 3vh;
+    height: 23vh;
+}
+
+.logo-partie{
+    z-index: 1;
+    border-radius: 100%;
+    width: 8.5vw; 
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, 10%);
+    margin: 0;
+    margin-left:8.5vw;
+    border: white 3px solid;
+    box-shadow: 5px 5px 8px rgba(0,0, 0, 0.3);
 }
 
 .content-left p {
@@ -171,6 +189,11 @@ body{
 
 .content-right{
     justify-content: center;
+}
+
+.content-right img{
+    width: 27vw;
+    object-fit: contain;
 }
 
 .content-right-partie{
@@ -207,7 +230,7 @@ body{
     display: flex;
     justify-content: end;
     font-style: italic;
-    font-size: 25px;
+    font-size: 1em;
     color: var(--color-source);
     box-shadow: 0px -3px 4px rgba(0,0, 0, 0.1);
 }
@@ -223,6 +246,10 @@ label .hamburger {
 #toggle-menu-mobile {
     display: none;
 } 
+
+.active{
+    border-bottom: solid 2px black;
+}
 
 /* début afficher les articles en hover */
 
@@ -241,16 +268,16 @@ label .hamburger {
 .header-list .sujets {
     display: none;
     position: absolute;
-    top: 105px;
-    background-color: #F9CD8F ;
-    width: 300px;
-    padding-top: 3px;
+    top: 11vh;
+    background-color:var(--color-bg) ;
+    width: 15vw;
+    /* padding-top: 3px; */
 }
 
 .header-list .sujets li {
-    font-size: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: .8em;
+    font-weight: normal;
+    padding: 10px 0;
     border: solid 2px white;
     border-top: none;
 }
@@ -261,7 +288,7 @@ label .hamburger {
 }
 
 .header-list .sujets a:hover {
-    color: rgb(0,0,0);
+    color: green;
 } 
 
 .menu:hover .sujets {
@@ -270,7 +297,7 @@ label .hamburger {
 
 /* fin afficher les articles en hover */
 
-.div-footer-actualite{
+.div-footer{
     width:100%;
     height: 11vh;
     display: flex;
@@ -278,20 +305,20 @@ label .hamburger {
     align-items: center;
 }
 
-.div-footer-actualite p{
+.div-footer p{
     font-size: 1.4vw;
     color: var(--color-text);
 }
 
-.div-footer-actualite i{
+.div-footer i{
     font-size: 3vw;
 }
 
-.div-footer-actualite .fa-facebook{
+.div-footer .fa-facebook{
     color: #465993;
 }
 
-.div-footer-actualite > *{
+.div-footer > *{
     padding:0 10px;
 }
 
@@ -358,8 +385,13 @@ label .hamburger {
         color: inherit;
     }
 
-    .logo-mobile {
-        display: none;
+    .logo-mobile{
+        margin: 0; /* margin retirer du logo accueil*/
+        justify-content: center;
+        top: 0;
+        right: 0;
+        transform:inherit;
+        position: fixed;
     }
 
     .logo-actualite{

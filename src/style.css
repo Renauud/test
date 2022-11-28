@@ -69,18 +69,21 @@ body{
     text-align: center;
     font-size: 1.5vw;
     text-transform: uppercase;
+    color: var(--color-title);
     font-weight: bold;
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.header-list li a{
-    color: var(--color-title);
+.header-list li:hover::after{
+    left: 30%;
+    width: 40%;
 }
 
+/* début afficher les articles en hover */
 
-.header-list li::after{
+.header-list > li::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -91,10 +94,45 @@ body{
     border-radius: 90px;
     transition: 0.3s;
 }
-.header-list li:hover::after{
-    left: 30%;
-    width: 40%;
+
+.header-list .sujets {
+    /* display: none; */
+    position: absolute;
+    text-align: center;
+    margin: 0 -20%;
+    top: 11vh;
+    background-color:var(--color-bg) ;
+    width: 15vw;
+    /* padding-top: 3px; */
 }
+
+.header-list .sujets li {
+    font-size: .8em;
+    font-weight: normal;
+    padding: 10px 0;
+    border: solid 2px white;
+    border-top: none;
+}
+
+.header-list .sujets ul {
+    display: inline-block;
+}
+
+/* .header-list .sujets li a{
+    text-align: center;
+    color: var(--color-title);
+} */
+
+.header-list .sujets a:hover {
+    color: green;
+} 
+
+.menu:hover .sujets {
+    display: block;
+} 
+
+/* fin afficher les articles en hover */
+
 
 .logo{
     border-radius: 100%;
@@ -137,8 +175,13 @@ body{
     color: white;
 }
 
+.content-left-partie-top{
+    width: 100%;
+}
+
 .content-left h1{
     font-size: 3.2vw;
+    width: 100%;
     text-align: center;
     padding-bottom: 5vh;
 }
@@ -509,9 +552,6 @@ body{
         display: block;
         visibility: visible;
     }
-
-
-
 
     .navbar .menu-mobile li{
         color:var(--color-title);

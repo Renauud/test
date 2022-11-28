@@ -3,29 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-actualite.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>90's Discoveries</title>
 </head>
 <body>
 
-    <!-- <img src="" alt=""> -->
-    <img class="logo logo-technologie desktop" src="../public/images/logo.webp" alt="logo">
+    <header class="container desktop">
 
- <header class="container">
-
-    <div class="div-header desktop">
-        <ul class="header-list">
-            <li><a href="">Technologie</a></li>
-            <li><a href="">Actualité</a></li>
-            <li><a href="">Musique</a></li>
-            <li class="active"><a href="">Éducation</a></li>
-        </ul>
-    </div> 
-
-
-</header>
+        <div class="div-header">
+            <ul class="header-list">
+                <li class="menu">Technologie
+                    <ul class="sujets">
+                        <li><a href="">La PS1</a></li>
+                        <li><a href="">sujet 2</a></li>
+                    </ul>
+                </li>
+                <li class="menu">Actualité
+                    <ul class="sujets">
+                        <li><a href="actualité_mandela.html">Nelson Mandela</a></li>
+                        <li><a href="actualité_ouragan.html">Ouragan Mitch</a></li>
+                    </ul>
+                </li>
+                <li class="menu">Musique
+                    <ul class="sujets">
+                        <li><a href="">La britpop</a></li>
+                        <li><a href="">Le black metal</a></li>
+                    </ul>
+                </li>
+                <li class="menu active">Éducation
+                    <ul class="sujets">
+                        <li><a href="">La loi jospin</a></li>
+                        <li><a href="">L'éducation pour tous</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div> 
+    
+    </header>
 
 <input type="radio" name="choix" class="mobile" id="show-navbar">
 
@@ -84,6 +100,8 @@
 <div class="container content">
     <div class="content-left content-left-partie content-top-mobile">
         <div class="content-left-partie-top desktop">
+            <img class="logo logo-partie desktop" src="../public/images/logo.webp" alt="logo">
+
 
             <h1>LA DÉCLARATION DE L'ÉDUCATION POUR TOUS</h1>
             <hr class="hr-partie">
@@ -106,7 +124,7 @@
         </div>
 
         <div class="source">
-            <p>Plus de détail sur la PlayStation sur <a href="https://fr.wikipedia.org/wiki/%C3%89ducation_pour_tous" target="_blank">Wikipédia</a> </p>
+            <p>Plus de détail sur l'éducation pour tous sur <a href="https://fr.wikipedia.org/wiki/%C3%89ducation_pour_tous" target="_blank">Wikipédia</a> </p>
         </div>
     </div>
 </div>
@@ -114,7 +132,7 @@
 
 
 <footer class="container desktop">
-    <div class="div-footer-accueil">
+    <div class="div-footer">
         <p>Suivez-nous</p>
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-instagram"></i>
