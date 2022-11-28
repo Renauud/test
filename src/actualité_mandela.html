@@ -17,10 +17,30 @@
 
     <div class="div-header">
         <ul class="header-list">
-            <li>Technologie</li>
-            <li class="active">Actualité</li>
-            <li>Musique</li>
-            <li>Éducation</li>
+            <li class="menu">Technologie
+                <ul class="sujets-technologie">
+                    <li><a href="">sujet 1</a></li>
+                    <li><a href="">sujet 2</a></li>
+                </ul>
+            </li>
+            <li class="active menu">Actualité
+                <ul class="sujets-actualité">
+                    <li><a href="actualité_mandela.html">Nelson Mandela</a></li>
+                    <li><a href="actualité_ouragan.html">Ouragan Mitch</a></li>
+                </ul>
+            </li>
+            <li class="menu">Musique
+                <ul class="sujets-musique">
+                    <li><a href="">sujet 1</a></li>
+                    <li><a href="">sujet 2</a></li>
+                </ul>
+            </li>
+            <li class="menu">Éducation
+                <ul class="sujets-education">
+                    <li><a href="">sujet 1</a></li>
+                    <li><a href="">sujet 2</a></li>
+                </ul>
+            </li>
         </ul>
     </div> 
 
@@ -36,6 +56,36 @@
 
     </div>
 </header>
+
+<input type="checkbox" id="toggle-menu-mobile" class="toggle">
+<label for="toggle-menu-mobile"><i class="fa-solid fa-bars hamburger"></i></label>
+
+<div class="navbar mobile">
+
+    <ul class="menu-mobile">
+        <li class="themes"><a href="">Thèmes</a></li>
+        <li><a href="">Technologie</a></li> 
+        
+        <!-- <ul class="sujets">
+            <li></li>
+            <li></li>
+        </ul> -->
+        <li class="active-mobile"><a href="./actualité_actualité.html">Actualité</a></li>        
+        <!-- <ul class="sujets">
+            <li></li>
+            <li></li>-->
+        <li><a href="">Musique</a></li>
+        <!-- <ul class="sujets">
+            <li></li>
+            <li></li>
+        </ul> -->
+        <li><a href="">Éducation</a></li>
+        <!-- <ul class="sujets">
+            <li></li>
+            <li></li>
+        </ul> -->
+    </ul>
+</div> 
 
 <div class="container content">
     <div class="content-left content-left-partie content-top-mobile">
