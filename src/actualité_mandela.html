@@ -18,25 +18,25 @@
     <div class="div-header">
         <ul class="header-list">
             <li class="menu">Technologie
-                <ul class="sujets-technologie">
+                <ul class="sujets">
                     <li><a href="">sujet 1</a></li>
                     <li><a href="">sujet 2</a></li>
                 </ul>
             </li>
             <li class="active menu">Actualité
-                <ul class="sujets-actualité">
+                <ul class="sujets">
                     <li><a href="actualité_mandela.html">Nelson Mandela</a></li>
                     <li><a href="actualité_ouragan.html">Ouragan Mitch</a></li>
                 </ul>
             </li>
             <li class="menu">Musique
-                <ul class="sujets-musique">
+                <ul class="sujets">
                     <li><a href="">sujet 1</a></li>
                     <li><a href="">sujet 2</a></li>
                 </ul>
             </li>
             <li class="menu">Éducation
-                <ul class="sujets-education">
+                <ul class="sujets">
                     <li><a href="">sujet 1</a></li>
                     <li><a href="">sujet 2</a></li>
                 </ul>
@@ -46,58 +46,73 @@
 
 </header>
 
+<input type="radio" name="choix" class="mobile" id="show-navbar">
+
 <header class="container mobile fixed">
 
     <div class="header-mobile">
-            
-        <i class="fa-solid fa-bars"></i>
+
+        <label for="show-navbar"><i class="fa-solid fa-bars hamburger"></i></label>
         <h1>90's Discoveries</h1>
-        <div></div>
+        <div>
+            <img class="logo logo-mobile" src="../public/images/logo.webp" alt="logo">
+        </div>
 
     </div>
 </header>
 
-<input type="checkbox" id="toggle-menu-mobile" class="toggle">
-<label for="toggle-menu-mobile"><i class="fa-solid fa-bars hamburger"></i></label>
+<input type="radio" name="choix" id="hide-navbar" class="mobile">
+
+<input type="checkbox" name="sujet" id="btn-technologie" class="mobile">
+<input type="checkbox" name="sujet" id="btn-actualite" class="mobile">
+<input type="checkbox" name="sujet" id="btn-musique" class="mobile">
+<input type="checkbox" name="sujet" id="btn-education" class="mobile">
 
 <div class="navbar mobile">
 
     <ul class="menu-mobile">
-        <li class="themes"><a href="">Thèmes</a></li>
-        <li><a href="">Technologie</a></li> 
+
+        <label for="hide-navbar"><i class="fa-solid fa-xmark xmark"></i></label>
+
+        <li class="themes">Thèmes</li>
+        <li><label for="btn-technologie" class="label-txt">Technologie</label></li>
         
-        <!-- <ul class="sujets">
-            <li></li>
-            <li></li>
-        </ul> -->
-        <li class="active-mobile"><a href="./actualité_actualité.html">Actualité</a></li>        
-        <!-- <ul class="sujets">
-            <li></li>
-            <li></li>-->
-        <li><a href="">Musique</a></li>
-        <!-- <ul class="sujets">
-            <li></li>
-            <li></li>
-        </ul> -->
-        <li><a href="">Éducation</a></li>
-        <!-- <ul class="sujets">
-            <li></li>
-            <li></li>
-        </ul> -->
+        <ul class="sujets sujets-tech">
+            <li><a href="">La PS1</a></li>
+            <li>Sujet 2</li>
+        </ul>
+        <li class="active-mobile"><label for="btn-actualite" class="label-txt">Actualité</label></li>
+        <ul class="sujets sujets-actu">
+            <li><a href="actualité_mandela.html">Nelson Mandela</a></li>
+            <li><a href="actualité_ouragan.html">Ouragan Mitch</a></li>
+        </ul>
+        <li><label for="btn-musique" class="label-txt">Musique</label></li>
+        <ul class="sujets sujets-musique">
+            <li>Sj1</li>
+            <li>Sj2</li>
+        </ul>
+        <li><label for="btn-education" class="label-txt">Education</label></li>
+        <ul class="sujets sujets-edu">
+            <li>SJ1</li>
+            <li>SJ2</li>
+        </ul>
     </ul>
 </div> 
 
 <div class="container content">
     <div class="content-left content-left-partie content-top-mobile">
         <div class="content-left-partie-top desktop">
-            <h1>LA LIBÉRATION DE<br>NELSON MANDELA</h1>
 
+            <h1>LA LIBÉRATION DE<br>NELSON MANDELA</h1>
             <hr class="hr-partie">
     </div>
 
     <img src="../public/images/mandela.png" alt="">
     </div>
     <div class="content-right content-right-partie content-bottom-mobile">  
+
+        <h1 class="mobile">LA LIBÉRATION DE<br>NELSON MANDELA</h1>
+        <hr class="hr-partie mobile">
 
         <div class="descriptif">
             <p> Militant de la lutte contre l'apartheid en Afrique du Sud, Nelson Mandela est emprisonné à vie au début des années 1960 pour sabotage et conspiration afin de renverser le gouvernement. 
