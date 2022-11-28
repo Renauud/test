@@ -10,19 +10,7 @@
 </head>
 <body>
 
-    <!-- <img src="" alt=""> -->
-
- <!-- <header class="container">
-
-    <div class="div-header desktop">
-        <ul class="header-list">
-            <li class="active"><a href="./technologie.html">Technologie</a></li>
-            <li><a href="">Actualité</a></li>
-            <li><a href="">Musique</a></li>
-            <li><a href="">Éducation</a></li>
-        </ul>
-    </div> 
-</header> -->
+<img class="logo logo-partie desktop" src="../public/images/logo.webp" alt="logo">
 
 <header class="container desktop">
 
@@ -30,7 +18,7 @@
         <ul class="header-list">
             <li class="menu active">Technologie
                 <ul class="sujets">
-                    <li><a href="">La PS1</a></li>
+                    <li class="active-sujets"><a href="">La PS1</a></li>
                     <li><a href="">sujet 2</a></li>
                 </ul>
             </li>
@@ -81,6 +69,8 @@
 <input type="checkbox" name="sujet" id="btn-education" class="mobile">
 
 <div class="navbar mobile">
+    
+    <div class="blur"></div>
 
     <ul class="menu-mobile">
 
@@ -90,7 +80,7 @@
         <li class="active-mobile"><label for="btn-technologie" class="label-txt">Technologie</label></li>
         
         <ul class="sujets sujets-tech">
-            <li><a href="./technologie_ps1.html">La PS1</a></li>
+            <li class="active-sujets"><a href="./technologie_ps1.html">La PS1</a></li>
             <li>Sujet 2</li>
         </ul>
         <li><label for="btn-actualite" class="label-txt">Actualité</label></li>
@@ -109,21 +99,28 @@
             <li>SJ2</li>
         </ul>
     </ul>
+
+    <footer class="container mobile">
+        <div class="div-footer div-footer-mobile">
+            <p>Suivez-nous</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </footer>
+
 </div> 
 
 <div class="container content">
     <div class="content-left content-left-partie content-top-mobile">
-        <div class="content-left-partie-top desktop">
-
-    <img class="logo logo-partie desktop" src="../public/images/logo.webp" alt="logo">
-
+        <div class="content-left-partie-top desktop fade-up">
 
             <h1>DES PROGRÈS TECHNOLOGIQUES FASCINANTS</h1>
             <hr class="hr-partie">
 
         </div>
 
-        <img class="rotation img-sujet" src="../public/images/ps1.png" alt="">
+        <img class="rotation img-sujet fade-up" src="../public/images/ps1.png" alt="">
     </div>
     <div class="content-right content-right-partie content-bottom-mobile"> 
 

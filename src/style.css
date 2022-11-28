@@ -556,13 +556,6 @@ body{
     .navbar .menu-mobile li{
         color:var(--color-title);
     }
-    
-    /* .navbar li{
-        display:inline;
-        width: 100%;
-        box-shadow: 0 1px 0 rgb(255, 255, 255);
-        padding: 20px 0;
-    } */
 
     #show-navbar, #hide-navbar, #btn-technologie, #btn-actualite, #btn-musique, #btn-education{
         display: none;
@@ -575,17 +568,6 @@ body{
         cursor: pointer; */
         /* opacity: 0; */
     }
-
-    /* .hamburger{
-        position: absolute; 
-        opacity: inherit;
-        z-index: 1;
-        top: 0;
-    } */
-
-    /* #show-navbar:checked ~ * .hamburger{
-        background: transparent;
-    } */
 
     /* img alt à remplir */
 }
