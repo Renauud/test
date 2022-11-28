@@ -102,7 +102,7 @@ body{
     border: white 3px solid;
     position: absolute;
     margin: 0 50%;
-    top: 3.5vh;
+    top: 2.5vh;
     transform: translate(-50%, 0%);
     box-shadow: 5px 5px 8px rgba(0,0, 0, 0.3);
 }
@@ -364,7 +364,7 @@ body{
     }
 
     .content-left img{
-        height: 22vh;
+        height: 33vh;
         margin: 0;
         margin-bottom: 3vh;
     }
