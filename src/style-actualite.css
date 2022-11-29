@@ -89,7 +89,7 @@ body{
 
 .logo{
     border-radius: 100%;
-    width: 8.5vw; /* <-- était 170px */
+    width: 8.5vw;
     border: white 3px solid;
     position: absolute;
     margin: 0 50%;
@@ -131,7 +131,7 @@ body{
     font-size: 3.2vw;
     width: 100%;
     text-align: center;
-    padding-bottom: 5vh;
+    padding: 5vh 0;
 }
 
 .content-left-partie h1{
@@ -192,12 +192,6 @@ body{
     animation: pulse 1500ms infinite;
 }
 
-/* .content-left p {
-    font-size: 1.7vw;
-    text-align: center;
-    color:var(--color-text);
-} */
-
 .content-right{
     justify-content: center;
 }
@@ -242,6 +236,9 @@ body{
 
 .descriptif p{
     padding: 30px;
+}
+
+.descriptif-accueil{
     height: 50vh;
 }
 
@@ -353,9 +350,6 @@ label .hamburger {
 .fade-up{
     animation: fadeInRight 1s ease-in-out;
 }
-
-
-
 
 @keyframes pulse {
     0%{

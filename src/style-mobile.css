@@ -47,6 +47,10 @@
         margin: 7px 0;
     }
 
+    .header-mobile a{
+        color: inherit;
+    }
+
     label{
         font-size: 60px;
         color: var(--color-bg-alt);
@@ -86,10 +90,6 @@
         flex-direction: column-reverse;
     }
 
-    /* .content-top-accueil-mobile img{
-        height: 420px;
-    } */
-
     .images_accueil_mobile{
         width: 100%;
         height: 420px;
@@ -102,12 +102,6 @@
         width: 100%;
         display: flex;
     }
-
-    /* .content-left img{
-        height: 35vh;
-        margin: 0;
-        margin-bottom: 3vh;
-    } */
 
     .content-bottom-mobile h1{
         text-align: center;
@@ -217,21 +211,6 @@
         display: block;
         visibility: visible;
     }
-/*     
-    #btn-actualite:checked ~ .navbar .menu-mobile .sujets-actu{
-        display: block;
-        visibility: visible;
-    }
-        
-    #btn-musique:checked ~ .navbar .menu-mobile .sujets-musique{
-        display: block;
-        visibility: visible;
-    }
-
-    #btn-education:checked ~ .navbar .menu-mobile .sujets-edu{
-        display: block;
-        visibility: visible;
-    } */
 
     .navbar .menu-mobile li{
         color:var(--color-title);
