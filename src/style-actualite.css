@@ -150,6 +150,14 @@ body{
     margin-bottom: 7vh;
 }
 
+.content-left-accueil hr{
+    margin-bottom: 0;
+}
+
+.content-left-accueil .descriptif{
+    font-size:3vh ;
+}
+
 .content-left-partie-top{
     margin-bottom: 3vh;
 }
@@ -184,11 +192,11 @@ body{
     animation: pulse 1500ms infinite;
 }
 
-.content-left p {
+/* .content-left p {
     font-size: 1.7vw;
     text-align: center;
     color:var(--color-text);
-}
+} */
 
 .content-right{
     justify-content: center;
@@ -234,6 +242,7 @@ body{
 
 .descriptif p{
     padding: 30px;
+    height: 50vh;
 }
 
 .rotation{
@@ -346,271 +355,7 @@ label .hamburger {
 }
 
 
-@media screen and (max-width:900px){
-    
-    .mobile{
-        display: block;
-    }
-    
-    .desktop{
-        display: none;
-    }
 
-    .container{
-        width: 100%;
-    }
-
-    body{
-        background-color: white;
-        overflow-y: auto;
-    }
-
-    body > .container{
-        height: inherit;
-    }
-
-    .content{
-        flex-direction: column;
-        height: auto;
-    }
-
-    .fixed{
-        background-color: var(--color-bg);
-        position: sticky;
-        z-index: 1;
-        top:0
-    }
-
-    .header-mobile{
-        display: flex;        
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        z-index: 2;
-    }
-
-    .header-mobile h1{
-        font-size: 50px;
-        color: var(--color-title);
-        margin: 7px 0;
-    }
-
-    label{
-        font-size: 60px;
-        color: var(--color-bg-alt);
-        cursor: pointer;
-        z-index: 15;
-    }
-
-    .menu-mobile .label-txt{
-        font-size: inherit;
-        color: inherit;
-    }
-
-    .logo-mobile{
-        margin: inherit;
-        justify-content: center;
-        top: 0;
-        transform:inherit;
-        position: fixed;
-    }
-
-    .logo-actualite{
-        margin: 0; 
-        top: 0;
-        right: 0;
-        transform:inherit;
-        position: fixed;
-        z-index: 2;
-    }
-
-    .content-top-mobile{
-        background-color: var(--color-bg-alt);
-        align-items: center;
-        height: 420px;
-    }
-
-    .content-top-accueil-mobile{
-        flex-direction: column-reverse;
-    }
-
-    .content-top-accueil-mobile img{
-        height: 420px;
-    }
-
-    .content-left, .content-right{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        display: flex;
-    }
-
-    .content-left img{
-        height: 35vh;
-        margin: 0;
-        margin-bottom: 3vh;
-    }
-
-    .content-bottom-mobile h1{
-        text-align: center;
-        font-size: 60px;
-        margin: 3vh 0;
-    }
-
-    .content-bottom-mobile hr{
-        background-color: var(--color-bg);
-        width: 60px;
-        height: 13px;
-        border-radius:90px;
-        margin: 0px auto;
-    }
-
-    .content-bottom-mobile h2{
-        text-align: center;
-        font-size: 45px;
-        margin: 2vh 0;
-    }
-
-    .content-bottom-mobile .descriptif{
-        text-align: justify;
-        font-size: 28px;
-    }
-
-    /*Animation mobile hamburger*/
-
-    .div-header{
-        position: absolute; 
-        height: 100%;
-    }
-
-    .navbar li a{
-        color: white;
-    }
-
-    .active-mobile{
-        background-color: #FFBE62;
-    }
-
-    .themes{
-        background-color: var(--color-bg-alt);
-    }
-
-    ul .themes:hover{
-        background-color: var(--color-bg-alt);
-    }
-
-    .navbar{
-        visibility: collapse;
-        background-color: var(--color-bg);
-        justify-content: start;
-        flex-direction: column;
-        align-items: center;
-        position: fixed;
-        top:0;
-        left: 0;
-        width: 50%;
-        height: 100%;
-        z-index: 2;
-    }
-
-    .navbar ul li{
-        width: 100%;
-        box-shadow: 0 2px 0 rgb(255, 255, 255);
-        margin-bottom: 2px;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 28px;
-        font-weight: bold;
-        padding: 20px 0;
-    }
-
-    .navbar .sujets li{
-        font-size: 15px;
-        padding: 10px 0;
-        box-shadow: 0 1px 0 white;
-    }
-
-    #show-navbar:checked ~ .navbar{
-        visibility: visible;
-    }
-
-    .xmark{
-        color: black;
-        position: absolute;
-        top: 37px;
-        left: 37px;
-        transform: translate(-50%,-50%);
-    }
-
-    #hide-navbar:checked ~ .navbar{
-        visibility: collapse;
-        display: none;
-    }
-
-    .sujets{
-        display: none;
-        visibility: hidden;
-    }
-
-    #btn-technologie:checked ~ .navbar .menu-mobile .sujets-tech,
-    #btn-actualite:checked ~ .navbar .menu-mobile .sujets-actu,
-    #btn-musique:checked ~ .navbar .menu-mobile .sujets-musique,*
-    #btn-education:checked ~ .navbar .menu-mobile .sujets-edu{
-        display: block;
-        visibility: visible;
-    }
-/*     
-    #btn-actualite:checked ~ .navbar .menu-mobile .sujets-actu{
-        display: block;
-        visibility: visible;
-    }
-        
-    #btn-musique:checked ~ .navbar .menu-mobile .sujets-musique{
-        display: block;
-        visibility: visible;
-    }
-
-    #btn-education:checked ~ .navbar .menu-mobile .sujets-edu{
-        display: block;
-        visibility: visible;
-    } */
-
-    .navbar .menu-mobile li{
-        color:var(--color-title);
-    }
-
-    #show-navbar, #hide-navbar, #btn-technologie, #btn-actualite, #btn-musique, #btn-education{
-        display: none;
-    }
-
-    label .hamburger {
-        display: block;
-        position: absolute; 
-        opacity: inherit;
-        z-index: 1;
-        top: 6px;
-    }
-    
-    #toggle-menu-mobile {
-        display: block;
-    } 
-
-    .div-footer-mobile{
-        position: absolute;
-        bottom: 0;
-    }
-
-    .blur{
-        position: fixed;
-        width: 50%;
-        height: 100vh;
-        right: 0%;
-        top: 0;
-        background-color: black;
-        opacity: .5;
-        z-index: -2;
-    }
-}
 
 @keyframes pulse {
     0%{

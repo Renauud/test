@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style-actualite.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style-mobile.css">
     <title>90's Discoveries</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
             </li>
             <li class="menu">Éducation
                 <ul class="sujets">
-                    <li><a href="education_loi__jospin.html">La loi jospin</a></li>
+                    <li><a href="education_loi_jospin.html">La loi jospin</a></li>
                     <li><a href="education_educ_pour_tous.html">L'éducation pour tous</a></li>
                 </ul>
             </li>
@@ -66,33 +67,40 @@
 
 <input type="radio" name="choix" id="hide-navbar" class="mobile">
 
+<input type="checkbox" name="sujet" id="btn-technologie" class="mobile">
+<input type="checkbox" name="sujet" id="btn-actualite" class="mobile">
+<input type="checkbox" name="sujet" id="btn-musique" class="mobile">
+<input type="checkbox" name="sujet" id="btn-education" class="mobile">
+
 <div class="navbar mobile">
+    
+    <div class="blur"></div>
 
     <ul class="menu-mobile">
 
         <label for="hide-navbar"><i class="fa-solid fa-xmark xmark"></i></label>
 
         <li class="themes">Thèmes</li>
-        <li class="technologie">Technologie</li>
+        <li><label for="btn-technologie" class="label-txt">Technologie</label></li>
         
         <ul class="sujets sujets-tech">
-            <li><a href="technologie_ps1.html">La ps1</a></li>
+            <li>La PS1</li>
             <li>Sujet 2</li>
         </ul>
-        <li>Actualité</li>
+        <li><label for="btn-actualite" class="label-txt">Actualité</label></li>
         <ul class="sujets sujets-actu">
             <li><a href="actualite_mandela.html">Nelson Mandela</a></li>
             <li><a href="actualite_ouragan.html">Ouragan Mitch</a></li>
         </ul>
-        <li>Musique</li>
+        <li><label for="btn-musique" class="label-txt">Musique</label></li>
         <ul class="sujets sujets-musique">
             <li><a href="musique_britpop.html">La britpop</a></li>
             <li><a href="musique_black_metal.html">Le black metal</a></li>
         </ul>
-        <li>Éducation</li>
+        <li><label for="btn-education" class="label-txt">Education</label></li>
         <ul class="sujets sujets-edu">
             <li><a href="education_loi_jospin.html">La loi Jospin</a></li>
-            <li><a href="education_educ_pour_tous">L'éducation pour tous</a></li>
+            <li><a href="education_educ_pour_tous.html">L'éducation pour tous</a></li>
         </ul>
     </ul>
 
@@ -108,37 +116,40 @@
 </div> 
 
 <div class="container content">
-    <div class="content-left content-top-accueil-mobile">
+    <div class="content-left content-left-accueil content-bottom-mobile content-top-accueil-mobile">
         <div>
             <h1>VUE EN DÉTAIL<br>LES ANNÉES 1990</h1>
             <hr>
-            <p class="lh">Ici, vous allez apprendre quelque faits notables qui sont arrivés durant les 
-            années 1990 en un temps record !
-            Les sujets couverts seront les suivants :
-            la technologie, l’actualité, la musique, et l’éducation.</p>
+            <div class="descriptif">
+                <p>Ici, vous allez apprendre quelque faits notables qui sont arrivés durant les 
+                années 1990 en un temps record !
+                Les sujets couverts seront les suivants :
+                la technologie, l’actualité, la musique, et l’éducation.<br>
+                Nous couvrirons ces sujets avec pour but non de vous les décrire dans le moindre détail, mais de vous donner envie de vous y intéresser. <br>
+                En espérant que la lecture vous plaise !
+                </p>
+            </div>
         </div>
 
-
-        <img class="images_accueil_mobile mobile" src="../public/images/images_accueil_mobile.png" alt="">
+        <img class="images_accueil_mobile img-sujet mobile" src="../public/images/images_accueil_mobile.png" alt="">
  </div>
-    <div class="content content-right"> 
 
-        <img class="desktop" src="../public/images/images_accueil.png" alt="">
+<div class="content content-right"> 
 
-    </div>
+    <img class="desktop" src="../public/images/images_accueil.png" alt="">
+
+</div>
 </div>
 
-
-
 <footer class="container desktop">
+
     <div class="div-footer">
         <p>Suivez-nous</p>
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-twitter"></i>
     </div>
+
 </footer>
-
 </body>
-
 </html>
