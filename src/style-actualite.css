@@ -178,6 +178,9 @@ body{
     margin-left:8.5vw;
     border: white 3px solid;
     box-shadow: 5px 5px 8px rgba(0,0, 0, 0.3);
+}
+
+.pulse{
     animation: pulse 1500ms infinite;
 }
 
@@ -208,6 +211,13 @@ body{
     color: var(--color-text);
     line-height: 1.3;
     overflow: auto;
+}
+
+.descriptif ol{
+    padding-left:20%;
+}
+.descriptif ol li{
+    list-style: decimal;
 }
 
 .descriptif::-webkit-scrollbar{
@@ -295,10 +305,6 @@ label .hamburger {
     text-align: center;
     display: inline-block;
 }
-
-/* .header-list .sujets a:hover {
-    color: green;
-}  */
 
 .menu:hover .sujets {
     display: block;
@@ -391,9 +397,7 @@ label .hamburger {
 
     label{
         font-size: 60px;
-        /* margin: 1vh 0 0 1vw; */
         color: var(--color-bg-alt);
-        /* background-color: green; */
         cursor: pointer;
         z-index: 15;
     }
@@ -404,10 +408,9 @@ label .hamburger {
     }
 
     .logo-mobile{
-        margin: inherit; /* margin retirer du logo accueil*/
+        margin: inherit;
         justify-content: center;
         top: 0;
-        /* right: 0; */
         transform:inherit;
         position: fixed;
     }
@@ -507,8 +510,6 @@ label .hamburger {
         left: 0;
         width: 50%;
         height: 100%;
-        /* margin: 0; */
-        /* padding: 0; */
         z-index: 2;
     }
 
@@ -533,11 +534,6 @@ label .hamburger {
         visibility: visible;
     }
 
-    /* #show-navbar:checked ~ .container{
-        background-color: black;
-        opacity: .1;
-    } */
-
     .xmark{
         color: black;
         position: absolute;
@@ -556,11 +552,14 @@ label .hamburger {
         visibility: hidden;
     }
 
-    #btn-technologie:checked ~ .navbar .menu-mobile .sujets-tech{
+    #btn-technologie:checked ~ .navbar .menu-mobile .sujets-tech,
+    #btn-actualite:checked ~ .navbar .menu-mobile .sujets-actu,
+    #btn-musique:checked ~ .navbar .menu-mobile .sujets-musique,*
+    #btn-education:checked ~ .navbar .menu-mobile .sujets-edu{
         display: block;
         visibility: visible;
     }
-    
+/*     
     #btn-actualite:checked ~ .navbar .menu-mobile .sujets-actu{
         display: block;
         visibility: visible;
@@ -574,7 +573,7 @@ label .hamburger {
     #btn-education:checked ~ .navbar .menu-mobile .sujets-edu{
         display: block;
         visibility: visible;
-    }
+    } */
 
     .navbar .menu-mobile li{
         color:var(--color-title);
@@ -611,7 +610,6 @@ label .hamburger {
         opacity: .5;
         z-index: -2;
     }
-
 }
 
 @keyframes pulse {
@@ -629,6 +627,7 @@ label .hamburger {
         opacity: 0;
         transform: translateX(300px);
     }
+
     to{
         opacity: 1;
     }
